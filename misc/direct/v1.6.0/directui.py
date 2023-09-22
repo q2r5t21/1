@@ -44,7 +44,7 @@ def api_only():
     )
 
 
-def webui():
+def a1():
     from modules.shared_cmd_options import cmd_opts
 
     launch_api = cmd_opts.api
@@ -106,7 +106,7 @@ def webui():
 if __name__ == "__main__":
     from modules.shared_cmd_options import cmd_opts
 
-    if cmd_opts.nowebui:
+    if cmd_opts.noa1:
         api_only()
     else:
-        webui()
+     a1()
